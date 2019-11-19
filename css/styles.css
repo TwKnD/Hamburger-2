@@ -1,0 +1,11 @@
+:root {
+  --light-grey: #eee;
+  --grey: #aaa;
+  --dark-grey; #666;
+}
+
+body {
+  background: url('../img/bg-main.jpg') no-repeat center/cover;
+  height: 100vw;
+  overflow: hidden;
+}
