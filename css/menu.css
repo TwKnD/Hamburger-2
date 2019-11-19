@@ -1,0 +1,62 @@
+/* position menu on background */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* position & size toggler */
+.menu .toggler {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+  visibility: hidden;
+  margin: 0;
+}
+
+/* position & size burger */
+.menu .burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+}
+
+/* Create burger line */
+.burger-line {
+  position: absolute;
+  height: 3px;
+  width: 40px;
+  background-color: var(--dark-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-line::before,
+.burger-line::after {
+  content: '';
+  position: relative;
+  flex-shrink: 0;
+  height: 3px;
+  width: 40px;
+  background: inherit;
+  top: 10px;
+  }
+
+.burger-line::after {
+  top: -10px;
+}
+
+
+ul {
+  display: none;
+}
