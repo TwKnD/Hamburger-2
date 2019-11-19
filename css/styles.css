@@ -28,6 +28,9 @@ body {
   height: 100%;
 }
 
+p {
+  margin: 2rem;
+}
 .btn {
   border: none;
   background-color: var(--dark-grey);
